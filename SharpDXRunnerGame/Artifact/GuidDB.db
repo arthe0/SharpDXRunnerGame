@@ -58,6 +58,11 @@ pathToGuidsMap:
   - 49c3f77741664a78a9d27773975f3064
   BaseAssets\Shaders\VolumetricRender\volume.vsh:
   - 1ee3c5137d7546c2a806e53b1c1b5fee
+  Scenes\Main.scene:
+  - f13eea01e83a4d7f9ada17c9d14407c4
+  BaseAssets\Meshes\Cube\RoyaltyFreeBox.fbx:
+  - 25b33ab7d04642d2bb1dacd1f5f61ce1
+  - 59393f83f76f413993e3fe49cca12f1f
 guidToDataTypeMap:
   66b55e2e772c403e89396ff83a3d8a62: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   8c9a12f5b760476f80167591ec963303: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -88,3 +93,6 @@ guidToDataTypeMap:
   71ac7647b288464c836b3c43e63cc8ee: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   49c3f77741664a78a9d27773975f3064: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   1ee3c5137d7546c2a806e53b1c1b5fee: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  f13eea01e83a4d7f9ada17c9d14407c4: Engine.AssetsData.SceneData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  25b33ab7d04642d2bb1dacd1f5f61ce1: Engine.AssetsData.MaterialData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  59393f83f76f413993e3fe49cca12f1f: Engine.AssetsData.ModelData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
