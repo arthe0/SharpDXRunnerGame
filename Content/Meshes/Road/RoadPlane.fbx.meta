@@ -1,9 +1,0 @@
-ImporterVersion: 3
-Guid: fbb48468670b4647aba546a1c81f7b64
-SubAssets:
-  ? Item1: Engine.AssetsData.MaterialData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    Item2: Material.007
-  : e620cd1b3c2e4b7e828173418fc9c6cb
-ImportSettings: !ModelImportSettings
-  MeshMaterialsOverride:
-    Plane.006_Plane.006_0: e620cd1b3c2e4b7e828173418fc9c6cb
