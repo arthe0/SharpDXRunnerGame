@@ -1,0 +1,90 @@
+version: 4
+pathToGuidsMap:
+  BaseAssets\Shaders\depth_only.fsh:
+  - 66b55e2e772c403e89396ff83a3d8a62
+  BaseAssets\Shaders\depth_only.vsh:
+  - 8c9a12f5b760476f80167591ec963303
+  BaseAssets\Shaders\pbr_lighting.fsh:
+  - 8d4720596b664ede9f3e2ba70ce9093d
+  BaseAssets\Shaders\pbr_lighting.vsh:
+  - c9c7823075c146a98b65d8abf9c39f2b
+  BaseAssets\Shaders\screen_quad.vsh:
+  - 23ac1c15da78422093adeff0d44e3dbc
+  BaseAssets\Shaders\tex_to_screen.fsh:
+  - 0bc977c5a1634598b8391f2d966ee5e8
+  BaseAssets\Shaders\Bloom\bloom_downsample_box.fsh:
+  - fca5a4556eb7474aa422362d2e16c442
+  BaseAssets\Shaders\Bloom\bloom_prefilter.fsh:
+  - 8a7c023046564b10b5cddf9ba726ba1f
+  BaseAssets\Shaders\Bloom\bloom_upsample_box.fsh:
+  - bf6f8c3458564940b9baa8ff1d2c0563
+  BaseAssets\Shaders\DeferredRender\deferred_gamma_correction.fsh:
+  - b2e724e24d0443beb36bf107f18e395e
+  BaseAssets\Shaders\DeferredRender\deferred_geometry.fsh:
+  - d39359ed1b094e649908acece240b310
+  BaseAssets\Shaders\DeferredRender\deferred_geometry.vsh:
+  - 7b49ed6f54c0493a9e622b6923bcabe5
+  BaseAssets\Shaders\DeferredRender\deferred_geometry_particles.fsh:
+  - 501eec7570864468a316ef948ac8b844
+  BaseAssets\Shaders\DeferredRender\deferred_geometry_particles.gsh:
+  - 25e790ef50d144dc95c5e0a8016e1058
+  BaseAssets\Shaders\DeferredRender\deferred_geometry_particles.vsh:
+  - 398ab5353e014b8eb5ebab091b123a24
+  BaseAssets\Shaders\DeferredRender\deferred_geometry_skinned.vsh:
+  - e715d408e14e429cb5c07dd7d9941229
+  BaseAssets\Shaders\DeferredRender\deferred_light_directional.fsh:
+  - 10a4e3b546994307a6510ae335e12272
+  BaseAssets\Shaders\DeferredRender\deferred_light_point.fsh:
+  - 68801468701f4ff4830c40b8b1794670
+  BaseAssets\Shaders\DeferredRender\deffered_addLight.fsh:
+  - 4595da5871844a2a97cf859207d7f705
+  BaseAssets\Shaders\Particles\particles_bitonic_sort_step.csh:
+  - ea0530dcce1740c1b71cb53548d8b197
+  BaseAssets\Shaders\Particles\particles_emit_point.csh:
+  - a4d158a387fc48c2a3eff4e9774af6b2
+  BaseAssets\Shaders\Particles\particles_emit_sphere.csh:
+  - 54dd1defec864f5f9fce7e63ca53de44
+  BaseAssets\Shaders\Particles\particles_force_constant.csh:
+  - 3ad26de739444859a857eecdfec8572f
+  BaseAssets\Shaders\Particles\particles_force_point.csh:
+  - c7fb9fbf8e4d4799b76bf733f42ae350
+  BaseAssets\Shaders\Particles\particles_init.csh:
+  - 39ef95e94f5a41a395c7f2a4efd6b44c
+  BaseAssets\Shaders\Particles\particles_update_energy.csh:
+  - 05543b6e2c8e43c9950339544addadfa
+  BaseAssets\Shaders\Particles\particles_update_physics.csh:
+  - 71ac7647b288464c836b3c43e63cc8ee
+  BaseAssets\Shaders\VolumetricRender\volume.fsh:
+  - 49c3f77741664a78a9d27773975f3064
+  BaseAssets\Shaders\VolumetricRender\volume.vsh:
+  - 1ee3c5137d7546c2a806e53b1c1b5fee
+guidToDataTypeMap:
+  66b55e2e772c403e89396ff83a3d8a62: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  8c9a12f5b760476f80167591ec963303: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  8d4720596b664ede9f3e2ba70ce9093d: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  c9c7823075c146a98b65d8abf9c39f2b: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  23ac1c15da78422093adeff0d44e3dbc: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  0bc977c5a1634598b8391f2d966ee5e8: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  fca5a4556eb7474aa422362d2e16c442: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  8a7c023046564b10b5cddf9ba726ba1f: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  bf6f8c3458564940b9baa8ff1d2c0563: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  b2e724e24d0443beb36bf107f18e395e: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  d39359ed1b094e649908acece240b310: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  7b49ed6f54c0493a9e622b6923bcabe5: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  501eec7570864468a316ef948ac8b844: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  25e790ef50d144dc95c5e0a8016e1058: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  398ab5353e014b8eb5ebab091b123a24: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  e715d408e14e429cb5c07dd7d9941229: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  10a4e3b546994307a6510ae335e12272: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  68801468701f4ff4830c40b8b1794670: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  4595da5871844a2a97cf859207d7f705: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  ea0530dcce1740c1b71cb53548d8b197: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  a4d158a387fc48c2a3eff4e9774af6b2: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  54dd1defec864f5f9fce7e63ca53de44: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  3ad26de739444859a857eecdfec8572f: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  c7fb9fbf8e4d4799b76bf733f42ae350: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  39ef95e94f5a41a395c7f2a4efd6b44c: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  05543b6e2c8e43c9950339544addadfa: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  71ac7647b288464c836b3c43e63cc8ee: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  49c3f77741664a78a9d27773975f3064: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  1ee3c5137d7546c2a806e53b1c1b5fee: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
