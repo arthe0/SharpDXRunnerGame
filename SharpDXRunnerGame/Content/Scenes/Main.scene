@@ -38,7 +38,6 @@ SerializableObjects:
   components:
   - 1f8556cbbfcb41e698784415b444163c
   - 0f8d4fd2a94545fab374a32fb70da301
-  - 742988991bb742d68c429f918699596a
   - da69699d2246447f9bd0e87968383879
   - 40515c1a862448f9a03013d3926924c9
 - !Transform
@@ -60,10 +59,6 @@ SerializableObjects:
   model: 59393f83f76f413993e3fe49cca12f1f
   materials:
   - e874da57415940be8d2930dbece786ef
-- !EditorCameraController
-  instanceId: 742988991bb742d68c429f918699596a
-  gameObject: cc80d3c07b2947819d3bf1e9645ea7cc
-  localEnabled: true
 - !CubeCollider
   instanceId: da69699d2246447f9bd0e87968383879
   gameObject: cc80d3c07b2947819d3bf1e9645ea7cc
@@ -93,6 +88,7 @@ SerializableObjects:
   components:
   - 9f8376627e8c421aad5b05115876be9c
   - 55f7ce4556324b66bc76dcebb807b56f
+  - 14928e8d9175475b8a104b7b68133cae
 - !Transform
   instanceId: 9f8376627e8c421aad5b05115876be9c
   gameObject: 6b1e77ff2b884f8d99165dcc0c32bee5
@@ -100,8 +96,8 @@ SerializableObjects:
     y: -50
     z: 20
   Rotation:
-    w: 0.9238795325112867
-    x: -0.3826834323650898
+    w: 0.8870108331782217
+    x: -0.4617486132350339
   Scale:
     x: 1
     y: 1
@@ -115,6 +111,10 @@ SerializableObjects:
   aspect: 1
   near: 0.001
   far: 500
+- !EditorCameraController
+  instanceId: 14928e8d9175475b8a104b7b68133cae
+  gameObject: 6b1e77ff2b884f8d99165dcc0c32bee5
+  localEnabled: true
 - !GameObject
   instanceId: c2a6ae0921044b1e8b9dd34065311ddb
   name: Player
@@ -149,7 +149,7 @@ SerializableObjects:
   instanceId: 286f0f08a127490cb3a31f355590756e
   gameObject: c2a6ae0921044b1e8b9dd34065311ddb
   localEnabled: true
-  mass: 100
+  mass: 25
   inertiaTensor:
     x: 1
     y: 1
@@ -171,4 +171,34 @@ SerializableObjects:
   instanceId: bbb5ec921a504b93b2b0ef619b2c8169
   gameObject: c2a6ae0921044b1e8b9dd34065311ddb
   localEnabled: true
-  JumpForce: 30
+  JumpForce: 200
+- !GameObject
+  instanceId: 3dd959755e3540e8a3d0fc2ae061f848
+  name: TrackGenerator
+  localEnabled: true
+  transform: 7ab904c83768438aa495905c83c043ae
+  components:
+  - 7ab904c83768438aa495905c83c043ae
+  - 098ba7e7360746a8bb9a6cd78c6fd0e2
+- !Transform
+  instanceId: 7ab904c83768438aa495905c83c043ae
+  gameObject: 3dd959755e3540e8a3d0fc2ae061f848
+  Rotation:
+    w: 1
+  Scale:
+    x: 1
+    y: 1
+    z: 1
+- !TrackGeneratorScript
+  instanceId: 098ba7e7360746a8bb9a6cd78c6fd0e2
+  gameObject: 3dd959755e3540e8a3d0fc2ae061f848
+  localEnabled: true
+  tileSize: 20
+  initialSpeed: 20
+  maxSpeed: 100
+  maxTiles: 15
+  farTileY: 160
+  tileModel: b900c044cff54b62ae1632f7592bcabc
+  tileMaterial: 68f08467a5fb4ca8b0c0e0a1c216217a
+  obstacleModel: 59393f83f76f413993e3fe49cca12f1f
+  obstacleMaterial: a8c55df50b5c451c8f5406b4f962b9d8

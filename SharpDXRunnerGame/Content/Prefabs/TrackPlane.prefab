@@ -1,0 +1,53 @@
+!PrefabData
+SerializableObjects:
+- !GameObject
+  instanceId: a5fde254bfae42c6af88e16595ad83c2
+  name: TrackPlane
+  localEnabled: true
+  transform: 4667eb84430a45fea23092a904d65ff8
+  components:
+  - 4667eb84430a45fea23092a904d65ff8
+  - ea5496891e964c17b496af13db79272f
+  - d097f9f36e4e46b09f26f8e2f3dcadfd
+  - 4616235426ff4a3e9307f35398de3361
+- !Transform
+  instanceId: 4667eb84430a45fea23092a904d65ff8
+  gameObject: a5fde254bfae42c6af88e16595ad83c2
+  Position:
+    z: -0.5
+  Rotation:
+    w: 6.123233995736766E-17
+    y: 1
+  Scale:
+    x: 10
+    y: 10
+    z: 1
+- !MeshComponent
+  instanceId: ea5496891e964c17b496af13db79272f
+  gameObject: a5fde254bfae42c6af88e16595ad83c2
+  localEnabled: true
+  model: b900c044cff54b62ae1632f7592bcabc
+  materials:
+  - 68f08467a5fb4ca8b0c0e0a1c216217a
+- !Rigidbody
+  instanceId: d097f9f36e4e46b09f26f8e2f3dcadfd
+  gameObject: a5fde254bfae42c6af88e16595ad83c2
+  localEnabled: true
+  mass: 1
+  inertiaTensor:
+    x: 1
+    y: 1
+    z: 1
+  linearDrag: 0.05
+  angularDrag: 0.05
+  isStatic: true
+- !CubeCollider
+  instanceId: 4616235426ff4a3e9307f35398de3361
+  gameObject: a5fde254bfae42c6af88e16595ad83c2
+  localEnabled: true
+  massPart: 1
+  size:
+    x: 1
+    y: 1
+    z: 0.1
+rootTransformIndex: 1

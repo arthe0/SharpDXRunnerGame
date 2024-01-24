@@ -27,7 +27,7 @@ public class PlayerScript : BehaviourComponent
     {
         base.Update();
 
-        if (Input.IsKeyDown(Key.Space))
+        if (Input.IsKeyPressed(Key.Space))
         {
             rigidBody?.AddImpulse(new Vector3(0,0, JumpForce));
         }
