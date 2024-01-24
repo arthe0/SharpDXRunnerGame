@@ -1,1 +1,93 @@
-!SceneData {}
+!SceneData
+SerializableObjects:
+- !GameObject
+  instanceId: 3e1181b8ebb54171bff9cbc962302fed
+  name: DirectionalLight
+  localEnabled: true
+  transform: 788a0e801fa642008770b698500a1897
+  components:
+  - 788a0e801fa642008770b698500a1897
+  - cf8f0ac7c796412aaeeb240cb6c6f651
+- !Transform
+  instanceId: 788a0e801fa642008770b698500a1897
+  gameObject: 3e1181b8ebb54171bff9cbc962302fed
+  Rotation:
+    w: 0.8535533905932737
+    x: -0.35355339059327384
+    y: 0.14644660940672627
+    z: 0.3535533905932738
+  Scale:
+    x: 1
+    y: 1
+    z: 1
+- !DirectionalLight
+  instanceId: cf8f0ac7c796412aaeeb240cb6c6f651
+  gameObject: 3e1181b8ebb54171bff9cbc962302fed
+  localEnabled: true
+  brightness: 1
+  Color:
+    x: 1
+    y: 1
+    z: 1
+  shadowSize: 4096
+- !GameObject
+  instanceId: cc80d3c07b2947819d3bf1e9645ea7cc
+  name: Plane
+  localEnabled: true
+  transform: 1f8556cbbfcb41e698784415b444163c
+  components:
+  - 1f8556cbbfcb41e698784415b444163c
+  - 0f8d4fd2a94545fab374a32fb70da301
+  - 742988991bb742d68c429f918699596a
+- !Transform
+  instanceId: 1f8556cbbfcb41e698784415b444163c
+  gameObject: cc80d3c07b2947819d3bf1e9645ea7cc
+  Position:
+    z: -2
+  Rotation:
+    w: 1
+  Scale:
+    x: 50
+    y: 50
+    z: 1
+- !MeshComponent
+  instanceId: 0f8d4fd2a94545fab374a32fb70da301
+  gameObject: cc80d3c07b2947819d3bf1e9645ea7cc
+  localEnabled: true
+  model: 59393f83f76f413993e3fe49cca12f1f
+  materials:
+  - 25b33ab7d04642d2bb1dacd1f5f61ce1
+- !EditorCameraController
+  instanceId: 742988991bb742d68c429f918699596a
+  gameObject: cc80d3c07b2947819d3bf1e9645ea7cc
+  localEnabled: true
+- !GameObject
+  instanceId: 6b1e77ff2b884f8d99165dcc0c32bee5
+  name: Camera
+  localEnabled: true
+  transform: 9f8376627e8c421aad5b05115876be9c
+  components:
+  - 9f8376627e8c421aad5b05115876be9c
+  - 55f7ce4556324b66bc76dcebb807b56f
+- !Transform
+  instanceId: 9f8376627e8c421aad5b05115876be9c
+  gameObject: 6b1e77ff2b884f8d99165dcc0c32bee5
+  Position:
+    y: -25
+    z: 20
+  Rotation:
+    w: 0.9238795325112867
+    x: -0.3826834323650898
+  Scale:
+    x: 1
+    y: 1
+    z: 1
+- !Camera
+  instanceId: 55f7ce4556324b66bc76dcebb807b56f
+  gameObject: 6b1e77ff2b884f8d99165dcc0c32bee5
+  localEnabled: true
+  makeCurrentOnStart: true
+  fov: 1.5707963267948966
+  aspect: 1
+  near: 0.001
+  far: 500

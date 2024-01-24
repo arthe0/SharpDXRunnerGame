@@ -60,6 +60,8 @@ pathToGuidsMap:
   - 1ee3c5137d7546c2a806e53b1c1b5fee
   Scenes\Main.scene:
   - f13eea01e83a4d7f9ada17c9d14407c4
+  Materials\Green.mat:
+  - e874da57415940be8d2930dbece786ef
   Meshes\Cube\RoyaltyFreeBox.fbx:
   - 25b33ab7d04642d2bb1dacd1f5f61ce1
   - 59393f83f76f413993e3fe49cca12f1f
@@ -96,3 +98,4 @@ guidToDataTypeMap:
   f13eea01e83a4d7f9ada17c9d14407c4: Engine.AssetsData.SceneData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   25b33ab7d04642d2bb1dacd1f5f61ce1: Engine.AssetsData.MaterialData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   59393f83f76f413993e3fe49cca12f1f: Engine.AssetsData.ModelData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  e874da57415940be8d2930dbece786ef: Engine.AssetsData.MaterialData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
