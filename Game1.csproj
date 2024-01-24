@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	
+	<PropertyGroup>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<EnableWindowsTargeting>true</EnableWindowsTargeting>
+		<UseWindowsForms>true</UseWindowsForms>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+	<PropertyGroup>
+		<Platforms>x64</Platforms>
+		<Configurations>Debug</Configurations>
+		<Nullable>warnings</Nullable>
+	</PropertyGroup>
+	<PropertyGroup>
+		<ProjectGuid>{c825dec3-c358-41d2-a150-e2800cd60a5b}</ProjectGuid>
+		<ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+		<AssemblyName>Game1</AssemblyName>
+	</PropertyGroup>
+	<PropertyGroup>
+		<BaseDirectory>.</BaseDirectory>
+		<OutputType>Library</OutputType>
+		<OutputPath>Temp\Game1\</OutputPath>
+    		<IntermediateOutputPath>obj\$(Configuration)</IntermediateOutputPath>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	</PropertyGroup>
+	
+	<PropertyGroup Label="UserMacros">
+		<Engine_IncludePath>$(EnvVar_SharpDxEditor)</Engine_IncludePath>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="SharpDX.LinearAlgebra">
+			<HintPath>$(Engine_IncludePath)\LinearAlgebra.dll</HintPath>
+		</Reference>
+		<Reference Include="SharpDX.Engine">
+			<HintPath>$(Engine_IncludePath)\Engine.dll</HintPath>
+		</Reference>
+		<Reference Include="SharpDX.Editor">
+			<HintPath>$(Engine_IncludePath)\Editor.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+	
+</Project>
