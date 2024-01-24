@@ -60,7 +60,7 @@ pathToGuidsMap:
   - 1ee3c5137d7546c2a806e53b1c1b5fee
   Scenes\Main.scene:
   - f13eea01e83a4d7f9ada17c9d14407c4
-  BaseAssets\Meshes\Cube\RoyaltyFreeBox.fbx:
+  Meshes\Cube\RoyaltyFreeBox.fbx:
   - 25b33ab7d04642d2bb1dacd1f5f61ce1
   - 59393f83f76f413993e3fe49cca12f1f
 guidToDataTypeMap:
