@@ -45,12 +45,13 @@ SerializableObjects:
   instanceId: 1f8556cbbfcb41e698784415b444163c
   gameObject: cc80d3c07b2947819d3bf1e9645ea7cc
   Position:
+    y: 50
     z: -2
   Rotation:
     w: 1
   Scale:
-    x: 120
-    y: 100
+    x: 500
+    y: 500
     z: 1
 - !MeshComponent
   instanceId: 0f8d4fd2a94545fab374a32fb70da301
@@ -96,11 +97,11 @@ SerializableObjects:
   instanceId: 9f8376627e8c421aad5b05115876be9c
   gameObject: 6b1e77ff2b884f8d99165dcc0c32bee5
   Position:
-    y: -60
+    y: -50
     z: 20
   Rotation:
-    w: 0.8660254037844387
-    x: -0.49999999999999994
+    w: 0.9238795325112867
+    x: -0.3826834323650898
   Scale:
     x: 1
     y: 1
@@ -122,11 +123,15 @@ SerializableObjects:
   components:
   - b7a52395400f42f7877e0f4305724473
   - d35ee2367c6b4c639399d2a8b676ab19
+  - 286f0f08a127490cb3a31f355590756e
+  - 28b57a31c8a9431184d723c108c18e87
+  - bbb5ec921a504b93b2b0ef619b2c8169
 - !Transform
   instanceId: b7a52395400f42f7877e0f4305724473
   gameObject: c2a6ae0921044b1e8b9dd34065311ddb
   Position:
-    y: -60
+    y: -45
+    z: 3
   Rotation:
     w: 1
   Scale:
@@ -140,3 +145,30 @@ SerializableObjects:
   model: 59393f83f76f413993e3fe49cca12f1f
   materials:
   - 25b33ab7d04642d2bb1dacd1f5f61ce1
+- !Rigidbody
+  instanceId: 286f0f08a127490cb3a31f355590756e
+  gameObject: c2a6ae0921044b1e8b9dd34065311ddb
+  localEnabled: true
+  mass: 100
+  inertiaTensor:
+    x: 1
+    y: 1
+    z: 1
+  linearDrag: 0.05
+  angularDrag: 0.05
+  freezeRotationX: true
+  freezeRotationY: true
+- !CubeCollider
+  instanceId: 28b57a31c8a9431184d723c108c18e87
+  gameObject: c2a6ae0921044b1e8b9dd34065311ddb
+  localEnabled: true
+  massPart: 1
+  size:
+    x: 2
+    y: 2
+    z: 2
+- !PlayerScript
+  instanceId: bbb5ec921a504b93b2b0ef619b2c8169
+  gameObject: c2a6ae0921044b1e8b9dd34065311ddb
+  localEnabled: true
+  JumpForce: 30
