@@ -1,4 +1,7 @@
-﻿using System.Windows.Input;
+﻿using System;
+using System.Runtime.InteropServices.JavaScript;
+using System.Threading;
+using System.Windows.Input;
 using Engine;
 using Engine.BaseAssets.Components;
 using LinearAlgebra;
@@ -9,27 +12,51 @@ namespace SharpDXRunnerGame.Content.Scripts.Player;
 public class PlayerScript : BehaviourComponent
 {
     [SerializedField]
-    private double JumpForce = 5;
+    private double jumpForce = 5;
+    [SerializedField]
+    private double crouchTime = 0.5;
 
     private Rigidbody rigidBody;
-    private TrackPositions PlayerPosition = TrackPositions.Center;
-    
+    private PlayerTrackPositions PlayerPosition = PlayerTrackPositions.Center;
+
+    private bool isInAir = false;
+    private bool isCrouching = false;
+
+    private double crouchTimeElapsed = 0.0;
     
     public override void Start()
     {
         base.Start();
 
         rigidBody = GameObject.GetComponent<Rigidbody>();
-        rigidBody.Material = new PhysicalMaterial(0.0, 0.0, CombineMode.Minimum, CombineMode.Maximum);
+        rigidBody.Material = new PhysicalMaterial(0.0, 0.0, CombineMode.Minimum, CombineMode.Minimum);
+
+        Collider collider = GameObject.GetComponent<Collider>();
+        collider.OnCollisionBegin += EndJump;
+        collider.OnTriggerEnter += (sender, other) => Logger.Log(LogType.Warning, "EnterTrigger");
     }
 
     public override void Update()
     {
         base.Update();
 
+        if (isCrouching)
+        {
+            crouchTimeElapsed += Time.DeltaTime;
+            if (crouchTimeElapsed >= crouchTime)
+            {
+                ReleaseCrouch();
+            }
+        }
+
         if (Input.IsKeyPressed(Key.Space))
         {
-            rigidBody?.AddImpulse(new Vector3(0,0, JumpForce));
+            StartJump();
+        }
+
+        if (Input.IsKeyPressed(Key.Down))
+        {
+            StartCrouch();
         }
 
         if (Input.IsKeyPressed(Key.Left))
@@ -44,21 +71,55 @@ public class PlayerScript : BehaviourComponent
         
     }
 
+    private void StartCrouch()
+    {
+        if(isInAir || isCrouching) return;
+        
+        isCrouching = true;
+        GameObject.Transform.LocalScale = new Vector3(1, 1, 0.5);
+    }
+
+    private void ReleaseCrouch()
+    {
+        if (!isCrouching) return;
+        
+        GameObject.Transform.LocalScale = new Vector3(1, 1, 1);
+        isCrouching = false;
+        crouchTimeElapsed = 0.0;
+    }
+
+    private void StartJump()
+    {
+        if(isInAir) return;
+        
+        if(isCrouching) ReleaseCrouch();
+        rigidBody?.AddImpulse(new Vector3(0,0, jumpForce));
+        isInAir = true;
+    }
+
+    private void EndJump(Collider sender, Collider other)
+    {
+        if (!isInAir)
+        {
+            isInAir = false;
+        }
+    }
+
     private void MovePlayerTrackPosition(bool left)
     {
         if (left)
         {
             switch (PlayerPosition)
             {
-                case TrackPositions.Left:
+                case PlayerTrackPositions.Left:
                     break;
-                case TrackPositions.Center:
+                case PlayerTrackPositions.Center:
                     GameObject.Transform.Position += new Vector3(-5,0,0);
-                    PlayerPosition = TrackPositions.Left;
+                    PlayerPosition = PlayerTrackPositions.Left;
                     break;
-                case TrackPositions.Right:
+                case PlayerTrackPositions.Right:
                     GameObject.Transform.Position += new Vector3(-5,0,0);
-                    PlayerPosition = TrackPositions.Center;
+                    PlayerPosition = PlayerTrackPositions.Center;
                     break;
             }
         }
@@ -66,15 +127,15 @@ public class PlayerScript : BehaviourComponent
         {
             switch (PlayerPosition)
             {
-                case TrackPositions.Left:
+                case PlayerTrackPositions.Left:
                     GameObject.Transform.Position += new Vector3(5,0,0);
-                    PlayerPosition = TrackPositions.Center;
+                    PlayerPosition = PlayerTrackPositions.Center;
                     break;
-                case TrackPositions.Center:
+                case PlayerTrackPositions.Center:
                     GameObject.Transform.Position += new Vector3(5,0,0);
-                    PlayerPosition = TrackPositions.Right;
+                    PlayerPosition = PlayerTrackPositions.Right;
                     break;
-                case TrackPositions.Right:
+                case PlayerTrackPositions.Right:
                     break;
             }
         }

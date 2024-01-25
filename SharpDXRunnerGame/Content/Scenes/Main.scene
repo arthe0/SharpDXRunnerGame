@@ -171,7 +171,8 @@ SerializableObjects:
   instanceId: bbb5ec921a504b93b2b0ef619b2c8169
   gameObject: c2a6ae0921044b1e8b9dd34065311ddb
   localEnabled: true
-  JumpForce: 200
+  jumpForce: 200
+  crouchTime: 0.5
 - !GameObject
   instanceId: 3dd959755e3540e8a3d0fc2ae061f848
   name: TrackGenerator
@@ -201,4 +202,5 @@ SerializableObjects:
   tileModel: b900c044cff54b62ae1632f7592bcabc
   tileMaterial: 68f08467a5fb4ca8b0c0e0a1c216217a
   obstacleModel: 59393f83f76f413993e3fe49cca12f1f
-  obstacleMaterial: a8c55df50b5c451c8f5406b4f962b9d8
+  obstacleDownMaterial: a8c55df50b5c451c8f5406b4f962b9d8
+  obstacleUpMaterial: 099c7d7602db4e22b708a37fb31bd606

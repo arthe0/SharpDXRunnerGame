@@ -70,8 +70,8 @@ pathToGuidsMap:
   - b900c044cff54b62ae1632f7592bcabc
   Meshes\TrackPlane\Material\RoadMaterial.mat:
   - 68f08467a5fb4ca8b0c0e0a1c216217a
-  Scripts\Enums\TrackPositions.cs:
-  - c521c10e37654141bcb546cf5602393f
+  Scripts\Enums\PlayerTrackPositions.cs:
+  - 93712fd74b8048648a6e1dacd90669e2
   Scripts\Player\PlayerScript.cs:
   - 2bf25b6e406346a8acb4ba419a5f44d4
   Scripts\Track\TrackGeneratorScript.cs:
@@ -84,6 +84,8 @@ pathToGuidsMap:
   - a8c55df50b5c451c8f5406b4f962b9d8
   Scripts\Track\TileGameObject.cs:
   - 47b14363cbc34cb0a4ec99f3ad1684cf
+  Materials\Blue.mat:
+  - 099c7d7602db4e22b708a37fb31bd606
 guidToDataTypeMap:
   66b55e2e772c403e89396ff83a3d8a62: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   8c9a12f5b760476f80167591ec963303: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -121,10 +123,11 @@ guidToDataTypeMap:
   82f5ded22adb4e0d9cd83cdad84c9e74: Engine.AssetsData.MaterialData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   b900c044cff54b62ae1632f7592bcabc: Engine.AssetsData.ModelData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   68f08467a5fb4ca8b0c0e0a1c216217a: Engine.AssetsData.MaterialData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  c521c10e37654141bcb546cf5602393f: Engine.AssetsData.ScriptData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  93712fd74b8048648a6e1dacd90669e2: Engine.AssetsData.ScriptData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   2bf25b6e406346a8acb4ba419a5f44d4: Engine.AssetsData.ScriptData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   0ae730b983a2411eb85683af961b1175: Engine.AssetsData.ScriptData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   899a784627bb4b8f97b3ed5bece333b7: Engine.AssetsData.TextureData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   8dc7bd3967fa400b912163b50165e063: Engine.AssetsData.PrefabData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   a8c55df50b5c451c8f5406b4f962b9d8: Engine.AssetsData.MaterialData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   47b14363cbc34cb0a4ec99f3ad1684cf: Engine.AssetsData.ScriptData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  099c7d7602db4e22b708a37fb31bd606: Engine.AssetsData.MaterialData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

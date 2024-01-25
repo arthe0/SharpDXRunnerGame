@@ -1,0 +1,3 @@
+ClassTypes:
+- SharpDXRunnerGame.Content.Scripts.Enums.PlayerTrackPositions, SharpDXRunnerGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+- SharpDXRunnerGame.Content.Scripts.Enums.ObstacleTrackPositions, SharpDXRunnerGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
