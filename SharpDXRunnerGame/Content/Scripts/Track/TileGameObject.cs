@@ -48,7 +48,7 @@ public class TileGameObject : Behavior
     private void AddObstacles(Model obstacleModel, Material obstacleUpMaterial, Material obstacleDownMaterial)
     {
          Random rnd = new Random();
-         int obstaclesNum = rnd.Next(0, 6);
+         int obstaclesNum = rnd.Next(2, 6);
          obstacles = new GameObject [obstaclesNum];
             
          ObstacleTrackPositions[] rndPositions =

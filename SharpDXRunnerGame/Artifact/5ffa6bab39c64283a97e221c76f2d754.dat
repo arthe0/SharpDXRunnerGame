@@ -1,0 +1,2 @@
+ClassTypes:
+- SharpDXRunnerGame.Content.Scripts.GameManager.RunnerGameManager, SharpDXRunnerGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null

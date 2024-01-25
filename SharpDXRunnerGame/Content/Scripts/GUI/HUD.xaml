@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="SharpDXRunnerGame.Content.Scripts.GUI.HUD"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:SharpDXRunnerGame.Content.Scripts.GUI"
+             mc:Ignorable="d"
+             d:DesignHeight="720" d:DesignWidth="1280">
+    <Grid>
+        <TextBlock Text = "Score: " FontSize="32" FontFamily="Comic Sans MS">
+             <TextBlock Text = "{Binding Score}"  FontSize="32" FontFamily="Comic Sans MS"></TextBlock>
+        </TextBlock>
+       
+    </Grid>
+</UserControl>

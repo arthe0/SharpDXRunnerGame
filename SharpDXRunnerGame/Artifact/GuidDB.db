@@ -86,6 +86,16 @@ pathToGuidsMap:
   - 47b14363cbc34cb0a4ec99f3ad1684cf
   Materials\Blue.mat:
   - 099c7d7602db4e22b708a37fb31bd606
+  Scripts\GameManager\RunnerGameManager.cs:
+  - 5ffa6bab39c64283a97e221c76f2d754
+  Scripts\GUI\HUD.xaml.cs:
+  - 9e9d5e05e73140008634bad42d207e21
+  Scripts\GUI\HUDComponent.cs:
+  - d8ac00516e96469daaea887633ce8094
+  Scripts\Track\ObstacleChannel.cs:
+  - ec70459f4f8440db82fab43632afec76
+  Scripts\Track\TileChannel.cs:
+  - c0040bd28436467f85c981d85df4ccb5
 guidToDataTypeMap:
   66b55e2e772c403e89396ff83a3d8a62: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   8c9a12f5b760476f80167591ec963303: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -131,3 +141,8 @@ guidToDataTypeMap:
   a8c55df50b5c451c8f5406b4f962b9d8: Engine.AssetsData.MaterialData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   47b14363cbc34cb0a4ec99f3ad1684cf: Engine.AssetsData.ScriptData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   099c7d7602db4e22b708a37fb31bd606: Engine.AssetsData.MaterialData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  5ffa6bab39c64283a97e221c76f2d754: Engine.AssetsData.ScriptData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  9e9d5e05e73140008634bad42d207e21: Engine.AssetsData.ScriptData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  d8ac00516e96469daaea887633ce8094: Engine.AssetsData.ScriptData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  ec70459f4f8440db82fab43632afec76: Engine.AssetsData.ScriptData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  c0040bd28436467f85c981d85df4ccb5: Engine.AssetsData.ScriptData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

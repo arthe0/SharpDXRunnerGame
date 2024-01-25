@@ -239,6 +239,7 @@ SerializableObjects:
   transform: 5bf3ece0a3a74a4982a449164f5e1460
   components:
   - 5bf3ece0a3a74a4982a449164f5e1460
+  - d1225258e2c24e38a49aa4c14b57f3dd
 - !Transform
   instanceId: 5bf3ece0a3a74a4982a449164f5e1460
   gameObject: 565e69c386b742e28fb6231b6dd18113
@@ -248,3 +249,29 @@ SerializableObjects:
     x: 1
     y: 1
     z: 1
+- !RunnerGameManager
+  instanceId: d1225258e2c24e38a49aa4c14b57f3dd
+  gameObject: 565e69c386b742e28fb6231b6dd18113
+  localEnabled: true
+- !GameObject
+  instanceId: 7de0a40af58048e3b05b88be154e4da7
+  name: HUD
+  localEnabled: true
+  transform: 91ba8ef20dff4f5d957fa28f36520c2d
+  components:
+  - 91ba8ef20dff4f5d957fa28f36520c2d
+  - a3f8ac99cbda4e38a3ddf5da78a715c1
+- !Transform
+  instanceId: 91ba8ef20dff4f5d957fa28f36520c2d
+  gameObject: 7de0a40af58048e3b05b88be154e4da7
+  Rotation:
+    w: 1
+  Scale:
+    x: 1
+    y: 1
+    z: 1
+- !HUDComponent
+  instanceId: a3f8ac99cbda4e38a3ddf5da78a715c1
+  gameObject: 7de0a40af58048e3b05b88be154e4da7
+  localEnabled: true
+  runnerGameManager: 565e69c386b742e28fb6231b6dd18113
