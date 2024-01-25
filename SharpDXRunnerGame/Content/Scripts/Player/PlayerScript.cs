@@ -20,7 +20,7 @@ public class PlayerScript : BehaviourComponent
         base.Start();
 
         rigidBody = GameObject.GetComponent<Rigidbody>();
-        rigidBody.Material.Bounciness = 0.0000001;
+        rigidBody.Material = new PhysicalMaterial(0.0, 0.0, CombineMode.Minimum, CombineMode.Maximum);
     }
 
     public override void Update()

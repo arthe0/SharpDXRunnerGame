@@ -39,7 +39,7 @@ public class TrackGeneratorScript : BehaviourComponent
     
     public override void Start()
     {
-        Rigidbody.GravitationalAcceleration = new Vector3(0, 0, -30);
+        Rigidbody.GravitationalAcceleration = new Vector3(0, 0, -40);
         currentSpeed = initialSpeed;
         
         for (int i = 0; i < maxTiles; i++)

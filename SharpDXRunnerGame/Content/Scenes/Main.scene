@@ -149,7 +149,7 @@ SerializableObjects:
   instanceId: 286f0f08a127490cb3a31f355590756e
   gameObject: c2a6ae0921044b1e8b9dd34065311ddb
   localEnabled: true
-  mass: 18
+  mass: 13
   inertiaTensor:
     x: 1
     y: 1
@@ -196,7 +196,7 @@ SerializableObjects:
   tileSize: 20
   initialSpeed: 20
   maxSpeed: 100
-  maxTiles: 15
+  maxTiles: 12
   farTileY: 160
   tileModel: b900c044cff54b62ae1632f7592bcabc
   tileMaterial: 68f08467a5fb4ca8b0c0e0a1c216217a
