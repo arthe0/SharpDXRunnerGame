@@ -11,7 +11,7 @@ public class RunnerGameManager : BehaviourComponent
 
     public override void Start()
     {
-        base.Start();
+        EngineCore.IsPaused = false;
     }
 
     public override void Update()

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SharpDXRunnerGame")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74d9aef76c4bbd2b7aa58074cbb75d4d64cddccd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+592ff591b8d9d18fe7f073c8f88029af0120a1fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("SharpDXRunnerGame")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SharpDXRunnerGame")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

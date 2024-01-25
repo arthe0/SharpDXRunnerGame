@@ -115,6 +115,8 @@ public class PlayerScript : BehaviourComponent
         if (other.GameObject.GetComponent<ObstacleChannel>() != null)
         {
             Logger.Log(LogType.Warning, "HIT!");
+            EngineCore.IsPaused = true;
+            SceneManager.LoadSceneByName("Main");
         }
     }
 
