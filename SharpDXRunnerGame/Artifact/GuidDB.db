@@ -96,6 +96,10 @@ pathToGuidsMap:
   - ec70459f4f8440db82fab43632afec76
   Scripts\Track\TileChannel.cs:
   - c0040bd28436467f85c981d85df4ccb5
+  Sounds\RXDXVIL-Bad-Piggies-Theme-_PHONK-Remix_.wav:
+  - b4e1f9c7eb2944be823a8a2e6536b289
+  Scripts\SoundComponents\BGMusicComponent.cs:
+  - 4b7c10074e03428da082a912bff9a340
 guidToDataTypeMap:
   66b55e2e772c403e89396ff83a3d8a62: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   8c9a12f5b760476f80167591ec963303: Engine.AssetsData.ShaderData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -146,3 +150,5 @@ guidToDataTypeMap:
   d8ac00516e96469daaea887633ce8094: Engine.AssetsData.ScriptData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   ec70459f4f8440db82fab43632afec76: Engine.AssetsData.ScriptData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   c0040bd28436467f85c981d85df4ccb5: Engine.AssetsData.ScriptData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  b4e1f9c7eb2944be823a8a2e6536b289: Engine.AssetsData.SoundData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  4b7c10074e03428da082a912bff9a340: Engine.AssetsData.ScriptData, Engine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

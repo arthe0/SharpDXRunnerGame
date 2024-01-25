@@ -89,6 +89,8 @@ SerializableObjects:
   - 9f8376627e8c421aad5b05115876be9c
   - 55f7ce4556324b66bc76dcebb807b56f
   - 14928e8d9175475b8a104b7b68133cae
+  - 7a5e5e61b3654647be435d590479d789
+  - e9f1d6596bc0483dbd1feba2ac2a19ae
 - !Transform
   instanceId: 9f8376627e8c421aad5b05115876be9c
   gameObject: 6b1e77ff2b884f8d99165dcc0c32bee5
@@ -115,6 +117,15 @@ SerializableObjects:
   instanceId: 14928e8d9175475b8a104b7b68133cae
   gameObject: 6b1e77ff2b884f8d99165dcc0c32bee5
   localEnabled: true
+- !SoundListener
+  instanceId: 7a5e5e61b3654647be435d590479d789
+  gameObject: 6b1e77ff2b884f8d99165dcc0c32bee5
+  localEnabled: true
+- !BGMusicComponent
+  instanceId: e9f1d6596bc0483dbd1feba2ac2a19ae
+  gameObject: 6b1e77ff2b884f8d99165dcc0c32bee5
+  localEnabled: true
+  music: b4e1f9c7eb2944be823a8a2e6536b289
 - !GameObject
   instanceId: c2a6ae0921044b1e8b9dd34065311ddb
   name: Player
@@ -232,6 +243,9 @@ SerializableObjects:
     x: 50
     y: 50
     z: 1.5
+  lightDirection:
+    z: -1
+  scatteringCoef: 0.03
 - !GameObject
   instanceId: 565e69c386b742e28fb6231b6dd18113
   name: GameManager
