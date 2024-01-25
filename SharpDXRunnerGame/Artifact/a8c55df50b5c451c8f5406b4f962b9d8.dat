@@ -1,1 +1,3 @@
-!MaterialData {}
+!MaterialData
+BaseColor:
+  x: 1

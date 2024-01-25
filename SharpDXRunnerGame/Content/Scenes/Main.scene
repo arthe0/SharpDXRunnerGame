@@ -149,13 +149,13 @@ SerializableObjects:
   instanceId: 286f0f08a127490cb3a31f355590756e
   gameObject: c2a6ae0921044b1e8b9dd34065311ddb
   localEnabled: true
-  mass: 25
+  mass: 18
   inertiaTensor:
     x: 1
     y: 1
     z: 1
-  linearDrag: 0.05
-  angularDrag: 0.05
+  linearDrag: 1E-05
+  angularDrag: 1E-05
   freezeRotationX: true
   freezeRotationY: true
 - !CubeCollider

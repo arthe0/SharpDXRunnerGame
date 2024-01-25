@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Engine;
@@ -40,6 +39,7 @@ public class TrackGeneratorScript : BehaviourComponent
     
     public override void Start()
     {
+        Rigidbody.GravitationalAcceleration = new Vector3(0, 0, -30);
         currentSpeed = initialSpeed;
         
         for (int i = 0; i < maxTiles; i++)
@@ -97,11 +97,11 @@ public class TrackGeneratorScript : BehaviourComponent
         GameObject[] AddObstacle()
         {
             Random rnd = new Random();
-            int obstaclesNum = rnd.Next(0, 2);
+            int obstaclesNum = rnd.Next(0, 3);
             GameObject[] obstacles = new GameObject [obstaclesNum];
             
             TrackPositions[] rndPositions = { TrackPositions.Left, TrackPositions.Center, TrackPositions.Right };
-            rndPositions.OrderBy(x => rnd.Next(0, 1));
+            rnd.Shuffle(rndPositions);
             
             for (int i = 0; i < obstaclesNum; i++)
             {
@@ -112,12 +112,13 @@ public class TrackGeneratorScript : BehaviourComponent
                 switch (rndPositions[i])
                 {
                     case TrackPositions.Left:
-                        obstacle.Transform.Position += new Vector3(-5,0,0);
+                        obstacle.Transform.Position += new Vector3(-5,0,1);
                         break;
                     case TrackPositions.Center:
+                        obstacle.Transform.Position += new Vector3(0,0,1);
                         break;
                     case TrackPositions.Right:
-                        obstacle.Transform.Position += new Vector3(5, 0, 0);
+                        obstacle.Transform.Position += new Vector3(5, 0, 1);
                         break;
                 }
                 
