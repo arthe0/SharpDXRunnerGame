@@ -163,6 +163,7 @@ SerializableObjects:
   gameObject: c2a6ae0921044b1e8b9dd34065311ddb
   localEnabled: true
   massPart: 1
+  isTrigger: true
   size:
     x: 2
     y: 2
@@ -204,3 +205,46 @@ SerializableObjects:
   obstacleModel: 59393f83f76f413993e3fe49cca12f1f
   obstacleDownMaterial: a8c55df50b5c451c8f5406b4f962b9d8
   obstacleUpMaterial: 099c7d7602db4e22b708a37fb31bd606
+- !GameObject
+  instanceId: 2f72860e007044ca95b5010d70ed598d
+  name: Gas
+  localEnabled: true
+  transform: dca372b65c3b4dfdbba26b08c5514c92
+  components:
+  - dca372b65c3b4dfdbba26b08c5514c92
+  - 888b612c5ebd4b9d82e6011451c344ee
+- !Transform
+  instanceId: dca372b65c3b4dfdbba26b08c5514c92
+  gameObject: 2f72860e007044ca95b5010d70ed598d
+  Position:
+    z: 20
+  Rotation:
+    w: 1
+  Scale:
+    x: 5
+    y: 5
+    z: 5
+- !GasVolume
+  instanceId: 888b612c5ebd4b9d82e6011451c344ee
+  gameObject: 2f72860e007044ca95b5010d70ed598d
+  localEnabled: true
+  size:
+    x: 50
+    y: 50
+    z: 1.5
+- !GameObject
+  instanceId: 565e69c386b742e28fb6231b6dd18113
+  name: GameManager
+  localEnabled: true
+  transform: 5bf3ece0a3a74a4982a449164f5e1460
+  components:
+  - 5bf3ece0a3a74a4982a449164f5e1460
+- !Transform
+  instanceId: 5bf3ece0a3a74a4982a449164f5e1460
+  gameObject: 565e69c386b742e28fb6231b6dd18113
+  Rotation:
+    w: 1
+  Scale:
+    x: 1
+    y: 1
+    z: 1

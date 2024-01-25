@@ -27,6 +27,8 @@ public class TileGameObject : Behavior
 
         CubeCollider tileCubeCollider = tile.AddComponent<CubeCollider>();
         tileCubeCollider.Size = new Vector3(2, 2, 0.1);
+
+        tile.AddComponent<TileChannel>();
         
         tile.Transform.Position = position;
         tile.Transform.LocalScale = new Vector3(10, 10, 1);
@@ -100,9 +102,10 @@ public class TileGameObject : Behavior
 
              CubeCollider obstacleCubeCollider = obstacle.AddComponent<CubeCollider>();
              obstacleCubeCollider.Size = new Vector3(2, 2, 2);
-             obstacleCubeCollider.IsTrigger = true;
+             obstacleCubeCollider.OnTriggerEnter+= (sender, other) => Logger.Log(LogType.Warning, "EnterTrigger");
+
+             obstacle.AddComponent<ObstacleChannel>();
              
-                
              obstacles[i] = obstacle;
          }
     }

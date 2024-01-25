@@ -6,6 +6,7 @@ using Engine;
 using Engine.BaseAssets.Components;
 using LinearAlgebra;
 using SharpDXRunnerGame.Content.Scripts.Enums;
+using SharpDXRunnerGame.Content.Scripts.Track;
 
 namespace SharpDXRunnerGame.Content.Scripts.Player;
 
@@ -32,8 +33,7 @@ public class PlayerScript : BehaviourComponent
         rigidBody.Material = new PhysicalMaterial(0.0, 0.0, CombineMode.Minimum, CombineMode.Minimum);
 
         Collider collider = GameObject.GetComponent<Collider>();
-        collider.OnCollisionBegin += EndJump;
-        collider.OnTriggerEnter += (sender, other) => Logger.Log(LogType.Warning, "EnterTrigger");
+        collider.OnTriggerEnter += CheckCollision;
     }
 
     public override void Update()
@@ -97,11 +97,24 @@ public class PlayerScript : BehaviourComponent
         isInAir = true;
     }
 
-    private void EndJump(Collider sender, Collider other)
+    private void EndJump()
     {
-        if (!isInAir)
+        if (isInAir)
         {
             isInAir = false;
+        }
+    }
+
+    private void CheckCollision(Collider sender, Collider other)
+    {
+        if (other.GameObject.GetComponent<TileChannel>() != null)
+        {
+            EndJump();
+        }
+
+        if (other.GameObject.GetComponent<ObstacleChannel>() != null)
+        {
+            Logger.Log(LogType.Warning, "HIT!");
         }
     }
 
