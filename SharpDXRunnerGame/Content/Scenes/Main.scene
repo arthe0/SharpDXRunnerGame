@@ -208,7 +208,8 @@ SerializableObjects:
   localEnabled: true
   tileSize: 20
   initialSpeed: 20
-  maxSpeed: 100
+  maxSpeed: 50
+  maxSpeedProgress: 300
   maxTiles: 12
   farTileY: 160
   tileModel: b900c044cff54b62ae1632f7592bcabc
@@ -245,7 +246,7 @@ SerializableObjects:
     z: 1.5
   lightDirection:
     z: -1
-  scatteringCoef: 0.03
+  scatteringCoef: 0.01
 - !GameObject
   instanceId: 565e69c386b742e28fb6231b6dd18113
   name: GameManager

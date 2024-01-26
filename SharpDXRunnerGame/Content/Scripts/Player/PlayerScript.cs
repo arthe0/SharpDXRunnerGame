@@ -115,7 +115,6 @@ public class PlayerScript : BehaviourComponent
         if (other.GameObject.GetComponent<ObstacleChannel>() != null)
         {
             Logger.Log(LogType.Warning, "HIT!");
-            EngineCore.IsPaused = true;
             SceneManager.LoadSceneByName("Main");
         }
     }
@@ -129,11 +128,11 @@ public class PlayerScript : BehaviourComponent
                 case PlayerTrackPositions.Left:
                     break;
                 case PlayerTrackPositions.Center:
-                    GameObject.Transform.Position += new Vector3(-5,0,0);
+                    GameObject.Transform.Position = new Vector3(-5,-45,GameObject.Transform.Position.z);
                     PlayerPosition = PlayerTrackPositions.Left;
                     break;
                 case PlayerTrackPositions.Right:
-                    GameObject.Transform.Position += new Vector3(-5,0,0);
+                    GameObject.Transform.Position = new Vector3(0,-45,GameObject.Transform.Position.z);
                     PlayerPosition = PlayerTrackPositions.Center;
                     break;
             }
@@ -143,11 +142,11 @@ public class PlayerScript : BehaviourComponent
             switch (PlayerPosition)
             {
                 case PlayerTrackPositions.Left:
-                    GameObject.Transform.Position += new Vector3(5,0,0);
+                    GameObject.Transform.Position = new Vector3(0,-45,GameObject.Transform.Position.z);
                     PlayerPosition = PlayerTrackPositions.Center;
                     break;
                 case PlayerTrackPositions.Center:
-                    GameObject.Transform.Position += new Vector3(5,0,0);
+                    GameObject.Transform.Position = new Vector3(5,-45,GameObject.Transform.Position.z);
                     PlayerPosition = PlayerTrackPositions.Right;
                     break;
                 case PlayerTrackPositions.Right:

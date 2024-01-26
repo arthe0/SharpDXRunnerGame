@@ -17,7 +17,9 @@ public class TrackGeneratorScript : BehaviourComponent
     [SerializedField] 
     private double initialSpeed = 10;
     [SerializedField]
-    private double maxSpeed = 100;
+    private double maxSpeed = 30;
+    [SerializedField]
+    private double maxSpeedProgress = 1000;
     [SerializedField] 
     private int maxTiles = 15;
     [SerializedField] 
@@ -38,7 +40,8 @@ public class TrackGeneratorScript : BehaviourComponent
     private double targetPositionY = 0;
     private LinkedList<TileGameObject> tiles = [];
 
-    private double currentSpeed; 
+    private double currentSpeed;
+    private int progress = 0;
     
     public override void Start()
     {
@@ -74,20 +77,26 @@ public class TrackGeneratorScript : BehaviourComponent
     {
         targetPositionY = GameObject.Transform.Position.y - tileSize;
         
-        Logger.Log(LogType.Info, $"First tile pos is {tiles.First()}");
-        // TileGameObject firstTile = tiles.First();
-        // tiles.First().Destroy();
-        tiles.RemoveFirst();
-
         TileGameObject lastTile = CreateNewTile(new Vector3(0, tiles.Last.Value.tile.Transform.Position.y + tileSize, 0));
         tiles.AddLast(lastTile);
+        
+        TileGameObject firstTile = tiles.First();
+        tiles.RemoveFirst();
+        firstTile.Destroy();
+
+        progress++;
+        
+        // Linear interpolation
+        double a = progress / maxSpeedProgress;
+        currentSpeed = initialSpeed * (1 - a) + maxSpeed * a;
+        
+        Logger.Log(LogType.Info, $"Current speed is {currentSpeed}");
     }
 
     private TileGameObject CreateNewTile(Vector3 position, bool withObstacle = true)
     {
         TileGameObject tile = new TileGameObject(position, tileModel, tileMaterial, obstacleModel, obstacleUpMaterial,
             obstacleDownMaterial, withObstacle);
-        Logger.Log(LogType.Info, $"{tile.tile.Transform.Position.y}");
         tile.tile.Transform.SetParent(GameObject.Transform);
         
         return tile;

@@ -102,7 +102,6 @@ public class TileGameObject : Behavior
 
              CubeCollider obstacleCubeCollider = obstacle.AddComponent<CubeCollider>();
              obstacleCubeCollider.Size = new Vector3(2, 2, 2);
-             obstacleCubeCollider.OnTriggerEnter+= (sender, other) => Logger.Log(LogType.Warning, "EnterTrigger");
 
              obstacle.AddComponent<ObstacleChannel>();
              
@@ -112,10 +111,10 @@ public class TileGameObject : Behavior
 
     public void Destroy()
     {
-        tile.Destroy();
+        tile?.Destroy();
         foreach (var obstacle in obstacles)
         {
-            obstacle.Destroy();
+            obstacle?.Destroy();
         }
 
         obstacles = [];
